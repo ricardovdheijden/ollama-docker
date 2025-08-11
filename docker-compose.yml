@@ -9,7 +9,7 @@ services:
     container_name: ollama
     pull_policy: always
     tty: true
-    restart: always
+    restart: unless-stopped
     environment:
       - OLLAMA_KEEP_ALIVE=24h
       - OLLAMA_HOST=0.0.0.0

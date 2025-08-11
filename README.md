@@ -1,6 +1,6 @@
 ### Start container
 ```shell
-docker compose up -d
+docker compose -f ./docker-compose.yml up -d --build --force-recreate
 ```
 The container creates a `ollama` folder in this project folder and contains public and private keys as well as the downloaded models
 
