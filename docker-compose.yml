@@ -4,8 +4,7 @@ services:
     ports:
       - 11434:11434
     volumes:
-      - .:/code
-      - ./ollama/ollama:/root/.ollama
+      - ./ollama-data:/root/.ollama
     container_name: ollama
     pull_policy: always
     tty: true
